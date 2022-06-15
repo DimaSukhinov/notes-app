@@ -1,0 +1,15 @@
+@import 'src/styles/variables';
+
+.addInput {
+  border-radius: $borderRadius;
+  border-color: $mainColor;
+  width: 280px;
+  padding: 15px 10px;
+}
+
+.editIcon {
+  width: 20px;
+  position: absolute;
+  right: 5px;
+  top: 40px;
+}

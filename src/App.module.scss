@@ -1,0 +1,11 @@
+@import 'src/styles/variables';
+
+.app {
+  @include display();
+  flex-direction: column;
+  margin: 20px;
+
+  .forms {
+    @include display();
+  }
+}

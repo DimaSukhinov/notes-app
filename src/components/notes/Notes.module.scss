@@ -1,0 +1,42 @@
+@import 'src/styles/variables';
+
+.notes {
+  @include display();
+  align-items: flex-start;
+
+  .note {
+    @include border();
+    position: relative;
+    margin: 20px;
+    padding: 40px 50px 25px 35px;
+    max-width: 500px;
+    word-wrap: break-word;
+
+    &:hover {
+      box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.41);
+    }
+
+    .tags {
+      @include display();
+      margin-top: 30px;
+
+      .tag {
+        background-color: $mainColor;
+        color: $textColor;
+        border-radius: 15px;
+        padding: 8px 15px;
+        margin: 0 5px;
+      }
+    }
+
+    .deleteIcon {
+      position: absolute;
+      right: 3px;
+      top: 3px;
+    }
+  }
+
+  h3 {
+    margin: 50px auto;
+  }
+}

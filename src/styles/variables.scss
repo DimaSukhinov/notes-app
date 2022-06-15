@@ -1,0 +1,14 @@
+$mainColor: #3c91e7;
+$textColor: #FFFFFF;
+$borderRadius: 8px;
+$border: 1px solid;
+
+@mixin display() {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin border() {
+  border: $border;
+  border-radius: $borderRadius;
+}
